@@ -1,0 +1,277 @@
+/* CONTENEDOR PRINCIPAL */
+.contenedor-tabla1{
+    width:100%;
+    margin:auto;
+    margin-top:20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* CONTENEDOR SCROLL */
+.tabla-responsive1{
+    width:100%;
+    overflow-x:auto; /* clave para móviles */
+}
+
+/* TABLA */
+.tabla-estiloOrdn{
+    width:100%;
+    min-width:600px; /* evita que se rompa en pantallas grandes */
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:0px 0px 5px 5px;
+    overflow:hidden;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+    font-size:clamp(12px,1.2vw,15px);
+    border:1px inset rgb(102, 101, 102);
+    table-layout:auto;
+}
+
+/* ENCABEZADO */
+.tabla-estiloOrdn thead{
+    background:linear-gradient(90deg,#81aee9,#6c99cc);
+    color:#fff;
+}
+
+/* CELDAS */
+.tabla-estiloOrdn th,
+.tabla-estiloOrdn td{
+    padding:12px;
+    text-align:left;
+    border-bottom:1px solid #e0e0e0;
+    font-size:clamp(12px,1.2vw,15px);
+    word-break:break-word; /* evita desbordes */
+}
+
+/* TITULOS */
+.tabla-estiloOrdn th{
+    font-weight:bold;
+    letter-spacing:0.5px;
+    background:#efeff1;
+    color:#1f1e1e;
+}
+
+/* CUERPO */
+.tabla-estiloOrdn tbody{
+    background:#fdfdfd;
+}
+
+/* HOVER */
+.tabla-estiloOrdn tbody tr:hover{
+    background:rgb(227, 230, 233);
+    cursor:pointer;
+    transform:scale(1.01);
+    transition:0.2s;
+    color:#070707;
+}
+
+/* TEXTO */
+.tabla-estiloOrdn td{
+    color:#333;
+}
+#ctrlSelectFamilia{
+     display:none;
+}
+#ctrlSelectProducto{
+     display:none;
+     }
+#accordionExample{
+        display:block;
+         /* ocultamos encabezado */
+    }
+
+
+/* 📲 TABLET */
+@media (min-width: 577px) and (max-width: 992px) {
+   
+    .tabla-estiloOrdn{
+        min-width:100%; /* quitamos restricción en móvil */
+        border:0;
+    }
+    #titulos{
+        display:none;
+         /* ocultamos encabezado */
+    }
+     /*para familia de productos*/
+     #accordionExample{
+        display:none;
+         /* ocultamos encabezado */
+    }
+    #ctrlSelectFamilia{
+     display:block;
+     }
+     /*para lista de productos*/
+     #cardProducto{
+        display:none;
+         /* ocultamos encabezado */
+    }
+    #ctrlSelectProducto{
+     display:block;
+     }
+
+
+
+    .tabla-estiloOrdn thead#titulos{
+        display:none;
+         /* ocultamos encabezado */
+    }
+
+    .tabla-estiloOrdn,
+    .tabla-estiloOrdn tbody,
+    .tabla-estiloOrdn tr,
+    .tabla-estiloOrdn td{
+        display:block;
+        width:100%;
+    }
+
+    .tabla-estiloOrdn tr{
+        margin-bottom:15px;
+        border:1px solid #ddd;
+        border-radius:5px;
+        padding:10px;
+        background:#fff;
+    }
+
+    .tabla-estiloOrdn td{
+        text-align:right;
+        padding-left:50%;
+        position:relative;
+        border:none;
+        border-bottom:1px solid #eee;
+    }
+
+    .tabla-estiloOrdn td::before{
+        content:attr(data-label); /* importante */
+        position:absolute;
+        left:10px;
+        width:50%;
+        text-align:left;
+        font-weight:bold;
+        color:#555;
+    }
+}
+
+
+
+/* ========================= */
+/* 📱 RESPONSIVE PARA MOVIL */
+/* ========================= */
+
+@media (max-width: 556px){
+
+    .tabla-estiloOrdn{
+        min-width:100%; /* quitamos restricción en móvil */
+        border:0;
+    }
+    #titulos{
+        display:none;
+         /* ocultamos encabezado */
+    }
+    /*para familia de productos*/
+     #accordionExample{
+        display:none;
+         /* ocultamos encabezado */
+    }
+    #ctrlSelectFamilia{
+     display:block;
+     }
+     /*para lista de productos*/
+     #cardProducto{
+        display:none;
+         /* ocultamos encabezado */
+    }
+    #ctrlSelectProducto{
+     display:block;
+     }
+    .tabla-estiloOrdn thead#titulos{
+        display:none;
+         /* ocultamos encabezado */
+    }
+
+    .tabla-estiloOrdn,
+    .tabla-estiloOrdn tbody,
+    .tabla-estiloOrdn tr,
+    .tabla-estiloOrdn td{
+        display:block;
+        width:100%;
+    }
+
+    .tabla-estiloOrdn tr{
+        margin-bottom:15px;
+        border:1px solid #ddd;
+        border-radius:5px;
+        padding:10px;
+        background:#fff;
+    }
+
+    .tabla-estiloOrdn td{
+        text-align:right;
+        padding-left:50%;
+        position:relative;
+        border:none;
+        border-bottom:1px solid #eee;
+    }
+
+    .tabla-estiloOrdn td::before{
+        content:attr(data-label); /* importante */
+        position:absolute;
+        left:10px;
+        width:50%;
+        text-align:left;
+        font-weight:bold;
+        color:#555;
+    }
+
+    /*para el manejo de Switch */
+    .switch-container{
+    display:inline-flex;
+    align-items:center;
+    cursor:pointer;
+    user-select:none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:22px;
+    color:#444;
+}
+
+.switch-container input{
+    display:none;
+}
+
+/* Fondo del switch */
+.slider{
+    position:relative;
+    width:42px;
+    height:22px;
+    background:#d8d8d8;
+    border-radius:30px;
+    transition:.3s;
+    margin-right:10px;
+}
+
+/* Botón */
+.slider::before{
+    content:"";
+    position:absolute;
+    width:16px;
+    height:16px;
+    left:3px;
+    top:3px;
+    background:#ffffff;
+    border-radius:50%;
+    box-shadow:0 1px 3px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+/* Cuando está activado */
+.switch-container input:checked + .slider{
+    background:#0d6efd;
+}
+
+.switch-container input:checked + .slider::before{
+    transform:translateX(20px);
+}
+
+.texto{
+    margin-left:2px;
+}
+
+}

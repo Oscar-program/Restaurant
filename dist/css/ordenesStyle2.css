@@ -1,0 +1,90 @@
+/* CONTENEDOR div principal */ 
+ /* CONTENEDOR div principal */ 
+        .contenedor-tabla1{
+                            width:100%;
+                            margin:auto;
+                            margin-top:20px;
+                            font-family:Arial, Helvetica, sans-serif;
+                             table-layout: auto;
+
+                        }
+
+        /* SCROLL RESPONSIVE dinv dentro del principal */
+        .tabla-responsive1{
+                            width:100%;
+                            overflow-x:auto;
+                             table-layout: auto;
+                        }
+
+        /* TABLA  clase que se tiene que  agregar a la tabla*/
+
+        .tabla-estiloOrdn{
+                        width:100%;
+                        min-width:600px;
+                        border-collapse:collapse;
+                        background: rgb(255, 253, 253); /*rgb(255, 255, 255);*/
+                        border-radius:0px 0px 5px 5px; ;
+                        overflow:hidden;
+                        box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+                        font-size:clamp(12px,1.2vw,15px);
+                        border:1px inset ;
+                        border-color: rgb(102, 101, 102);
+                            table-layout: auto;
+                    }
+
+        /* ENCABEZADO */
+
+        .tabla-estiloOrdn thead{
+                            background:linear-gradient(90deg,#81aee9,#6c99cc);
+                            color:rgb(227, 233, 238);
+                            /*font-size:16px;*/
+                        }
+        /* CELDAS */
+
+        .tabla-estiloOrdn th,
+        .tabla-estiloOrdn td{
+                        padding:12px;
+                        text-align:left;
+                        border-bottom:1px solid #e0e0e0;
+                        font-size:clamp(12px,1.2vw,15px);
+                         /*background:linear-gradient(90deg,#81aee9,#6c99cc);*/
+                        }
+
+        /* TITULOS */
+        .tabla-estiloOrdn th{
+                        font-weight:bold;
+                        letter-spacing:0.5px;
+                         font-size:clamp(12px,1.2vw,15px);
+                          /*background:linear-gradient(90deg,#5590e9,#6c99cc);*/
+                          background:#efeff1;
+                          color:#1f1e1e;
+                        }
+
+        /* FILAS ALTERNADAS */
+        .tabla-estiloOrdn tbody{
+                                                background:#fdfdfd;
+                                            }
+
+
+        /*.tabla-estilo tbody tr:nth-child(even){
+                                                background:#f7f9fc;
+                                            }*/
+
+        /* EFECTO MOUSE */
+        .tabla-estiloOrdn tbody tr:hover{
+                                    background: rgb(227, 230, 233);
+                                    cursor:pointer;
+                                    transform:scale(1.01);
+                                    transition:0.2s;
+                                    opacity:1.0;
+                                    color: #070707;
+                                    }
+
+        /* TEXTO */
+
+        .tabla-estiloOrdn td{
+                        font-size:clamp(12px,1.2vw,15px);
+                        color:#333;
+                        }
+
+  

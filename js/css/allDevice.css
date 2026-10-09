@@ -1,0 +1,47 @@
+.allDevice{
+  margin: left 4px;
+  margin-right: 4px;
+
+}
+.padre {
+    
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* margin-left: 10PX;*/
+    
+  }
+/*1025px — 1200px: Computadoras de escritorio, pantallas grandes*/
+@media (min-width: 1080px) and (max-width: 1920px) {
+    
+    .allDevice{
+     width: 50%;
+    }
+  }
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .allDevice{
+     width: 75%;
+    }
+  }
+
+/*para pantallas  pequeñas   y laptops*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .allDevice{
+     width: 75%;    
+    }
+  }
+ /*para  tablet y aipad*/
+  @media (min-width: 481px) and (max-width: 768px) {
+    .allDevice {
+        width: 100%;
+        }
+    }
+/*para dispositivos moviles */
+    @media (min-width: 320px ) and (max-width: 480px) {
+        .allDevice {
+            width: 100%;         
+           }
+    }
+  
+

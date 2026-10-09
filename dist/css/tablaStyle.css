@@ -1,0 +1,116 @@
+/* CONTENEDOR div principal */ 
+ /* CONTENEDOR div principal */ 
+        .contenedor-tabla{
+                            width:100%;
+                            margin:auto;
+                            margin-top:20px;
+                            font-family:Arial, Helvetica, sans-serif;
+                        }
+
+        /* SCROLL RESPONSIVE dinv dentro del principal */
+        .tabla-responsive{
+                            width:100%;
+                            overflow-x:auto;
+                        }
+
+        /* TABLA  clase que se tiene que  agregar a la tabla*/
+
+        .tabla-estilo{
+                        width:98%;
+                        min-width:600px;
+                        border-collapse:collapse;
+                        background: white; /*rgb(255, 255, 255);*/
+                        border-radius:0px 0px 5px 5px; ;
+                        overflow:hidden;
+                        box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+                        font-size:clamp(12px,1.2vw,15px);
+                        border:1px solid ;
+                        border-color: dodgerblue;
+                    }
+
+        /* ENCABEZADO */
+
+        .tabla-estilo thead{
+                            background:linear-gradient(90deg,#2c7be5,#1a4fa0);
+
+                            color:rgb(244, 247, 244);
+                            /*font-size:16px;*/
+                        }
+        /* CELDAS */
+
+        .tabla-estilo th,
+        .tabla-estilo td{
+                        padding:12px;
+                        text-align:left;
+                        border-bottom:1px solid #e0e0e0;
+                        }
+
+        /* TITULOS */
+        .tabla-estilo th{
+                        font-weight:bold;
+                        letter-spacing:0.5px;
+                        }
+
+        /* FILAS ALTERNADAS */
+        .tabla-estilo tbody{
+                                                background:#f7f9fc;
+                                            }
+
+
+        /*.tabla-estilo tbody tr:nth-child(even){
+                                                background:#f7f9fc;
+                                            }*/
+
+        /* EFECTO MOUSE */
+        .tabla-estilo tbody tr:hover{
+                                    background: rgb(135, 191, 247);
+                                    cursor:pointer;
+                                    transform:scale(1.01);
+                                    transition:0.2s;
+                                    opacity:1.0;
+                                    color: #e0e0e0;
+                                    }
+
+        /* TEXTO */
+
+        .tabla-estilo td{
+                        font-size:clamp(12px,1.2vw,15px);
+                        color:#333;
+                        }
+
+.btn-check{
+    appearance: none;
+    -webkit-appearance: none;
+
+    padding: 12px 22px;
+    background: #e0e0e0;
+    border: 2px solid #999;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: all .2s ease;
+
+    display: inline-block;
+    min-width: 120px;
+    height: 45px;
+}
+
+/* Texto dentro */
+.btn-check::before{
+    content: "Cobrar";
+    color: #333;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+/* Estado activado */
+.btn-check:checked{
+    background: #28a745;
+    border-color: #1f7a33;
+}
+
+/* Texto activado */
+.btn-check:checked::before{
+    content: "Cobrado";
+    color: white;
+}

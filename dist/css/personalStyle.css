@@ -1,0 +1,102 @@
+/*
+ Creamosel stilo para el  herader de la  tabla 
+*/
+.headertable table, th {
+    background: linear-gradient(LightSkyBlue 15%, DodgerBlue 60%, CornflowerBlue);
+    color:white;
+    border-color:rgb(222, 222, 223);
+    font-size: 14px;
+
+}
+/* segmento para redondear el  boton guardar */
+.btnAction {
+    border-radius: 15px;
+    background-color:#5DADE2  !important;
+    color:white !important;
+    width: 150px;
+    border-color: dodgerblue !important;
+}
+.btnMenu {
+    border-radius: 15px;
+    background-color:#5DADE2  !important;
+    color:white !important;
+    /*width: 150px; */
+    border-color: rgb(119, 121, 122) !important;
+}
+
+/*para los botones de  accio */
+.btn-edit{
+    margin:0px; 
+     /*background-color:royalblue !important; */
+     color:#5DADE2 !important;
+     width: 15%;
+     height: 10%;
+     padding: 4px 6px 5px;
+     margin-left: 15px;
+     margin-right: 5px;
+     margin-top: 30px;
+     margin-bottom: 5pX;
+     border-radius: 5px;
+     text-align: center;
+     
+}
+/*para los botones de  accio */
+.btn-eraser{
+    margin:0px; 
+     /*background-color:red !important; */
+      color:#5DADE2 !important;
+     width: 15%;
+     height: 10%;
+     padding: 4px 8px 5px;
+     margin-left: 2px;
+     margin-right: 5px;
+     margin-top: 30px;
+     margin-bottom: 5pX;
+     border-radius: 5px;
+     text-align: center;
+     
+}
+.tituloPrincipal{
+   color :#243458 !important;
+   font-size:clamp(12px,1.2vw,15px);
+}
+/* Estilo para botones ordenes pendientes de despacho */
+.btn-OrdenPendiente{
+    border-radius: 15px;
+    background-color:#5DADE2  !important;
+    color:white !important;
+    width: 150px;
+    border-color: dodgerblue !important;
+    font-size:clamp(12px,1.2vw,15px);
+}
+.tituloBotones{
+    display:flex;
+   align-items:center;
+   justify-content:center;
+    font-size:clamp(12px,1.2vw,15px);
+    color:aliceblue;
+     
+}
+.btnActionVenta {
+    border-radius: 15px;
+    background-color:#5DADE2  !important;
+    color:white !important;
+    width: 70px;
+    height: 70px;
+    padding-top: 10px;
+    border-color: dodgerblue !important;
+}
+.btnActionVenta1 {
+    border-radius: 15px;
+    background-color:#0552a0  !important;
+    color:white !important;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    border-color: rgb(245, 233, 71) !important;
+}
+.oculto {
+    transform: translateX(-100%);
+  }
+  
+

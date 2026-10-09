@@ -83,7 +83,7 @@ class Welcome extends CI_Controller {
        $fila = $stmt->fetchAll(PDO::FETCH_ASSOC);
         var_dump($fila);
 
-
+        //  se agrega un nuevo comentario
 		
 
 
